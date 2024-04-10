@@ -13,8 +13,22 @@
         "axios": "^1.6.4",
         "laravel-vite-plugin": "^1.0",
         "postcss": "^8.4.31",
+        "sass": "^1.74.1",
         "tailwindcss": "^3.2.1",
         "vite": "^5.0",
         "vue": "^3.4.0"
+    },
+    "dependencies": {
+        "@coders-tm/vue-number-format": "^3.34.1",
+        "@fortawesome/fontawesome-svg-core": "^6.5.2",
+        "@fortawesome/free-solid-svg-icons": "^6.5.2",
+        "@fortawesome/vue-fontawesome": "^3.0.6",
+        "apexcharts": "^3.48.0",
+        "fontawesome": "^5.6.3",
+        "laravel-permission-to-vuejs": "^3.0.2",
+        "lodash": "^4.17.21",
+        "vue-select": "^4.0.0-beta.6",
+        "vue3-apexcharts": "^1.5.2",
+        "ziggy-js": "^2.1.0"
     }
 }
