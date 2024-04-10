@@ -3,9 +3,9 @@
         <div class="scrollbar-inner">
             <!-- Brand -->
             <div class="mb-4 text-center sidenav-header">
-                <!-- <Link class="navbar-brand text-primary" :href="route('dashboard')">
+                <Link class="navbar-brand text-primary" :href="route('dashboard')">
                 <img src="/img/logo/iMake-Indigo.png" alt="iMake" class="home-logo mt-1" height="150">
-                </Link> -->
+                </Link>
             </div>
             <br>
             <div class="mt-5 navbar-inner">

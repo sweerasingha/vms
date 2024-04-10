@@ -25,8 +25,8 @@
                             <div class="media align-items-center">
                                 <i class="fa fa-user me-sm-1 text-white"></i>
                                 <div class="media-body  ml-2  d-none d-lg-block">
-                                    <!-- <span class="mb-0 text-sm font-weight-bold text-white">{{ $page.props.auth.user.name
-                                    }}</span> -->
+                                    <span class="mb-0 text-sm font-weight-bold text-white">{{ $page.props.auth.user.name
+                                    }}</span>
                                 </div>
                             </div>
                         </a>
