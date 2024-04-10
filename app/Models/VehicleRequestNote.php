@@ -6,18 +6,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Vehicle extends Model
+class VehicleRequestNote extends Model
 {
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'make',
-        'model',
-        'year',
-        'vin',
-        'status',
-        'type_id',
-        'category_id',
-        'costing_id',
+        'vehicle_request_id',
+        'note',
+        'date',
+        'requested_by',
     ];
 }

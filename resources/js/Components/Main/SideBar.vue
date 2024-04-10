@@ -14,11 +14,11 @@
                     <!-- Nav items -->
                     <ul class="mb-3 navbar-nav">
                         <li class="nav-item">
-                            <!-- <Link :class="{ 'active': route().current() == 'dashboard' }"
+                            <Link :class="{ 'active': route().current() == 'dashboard' }"
                                 class="nav-link active-preloader" :href="route('dashboard')">
                             <font-awesome-icon icon="fa-solid fa-desktop" />
                             <span class="ml-2 nav-link-text font-weight-400">Dashboard</span>
-                            </Link> -->
+                            </Link>
                         </li>
 
                         <li class="nav-item" v-if="can('read_materials')">

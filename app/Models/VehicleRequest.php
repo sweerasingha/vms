@@ -6,18 +6,20 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Vehicle extends Model
+class VehicleRequest extends Model
 {
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'make',
-        'model',
-        'year',
-        'vin',
+        'code',
+        'transaction_type_id',
+        'date',
+        'remarks',
         'status',
-        'type_id',
-        'category_id',
-        'costing_id',
     ];
+
+    public function items()
+    {
+        return $this->hasMany(VehicleRequestItem::class);
+    }
 }
