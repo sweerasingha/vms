@@ -21,35 +21,35 @@
                             </Link>
                         </li>
 
-                        <li class="nav-item" v-if="can('read_materials')">
-                            <a class="nav-link" href="#materialMenu" data-toggle="collapse" aria-expanded="true">
-                                <font-awesome-icon icon="fa-solid fa-folder-open" /><span class="ml-2">Material</span>
+                        <li class="nav-item" v-if="can('read_vehicles')">
+                            <a class="nav-link" href="#vehicleMenu" data-toggle="collapse" aria-expanded="true">
+                                <font-awesome-icon icon="fa-solid fa-folder-open" /><span class="ml-2">Vehicle</span>
                             </a>
-                            <ul :class="{ 'collapse': $page.url.startsWith('/materialCategory') || $page.url.startsWith('/units') || $page.url.startsWith('/warehouses') || $page.url.startsWith('/currency') || $page.url.startsWith('/country') || $page.url.startsWith('/measurement') || $page.url.startsWith('/material-category') || $page.url.startsWith('/vehicle-type') || $page.url.startsWith('/vendors') || route().current() == 'dashboard' || $page.url.startsWith('/unit-conversion') || $page.url.startsWith('/tax') || $page.url.startsWith('/users') || $page.url.startsWith('/grn') }"
-                                class=" list-unstyled" id="materialMenu">
+                            <ul :class="{ 'collapse': $page.url.startsWith('/vehicleCategory') || $page.url.startsWith('/units') || $page.url.startsWith('/warehouses') || $page.url.startsWith('/currency') || $page.url.startsWith('/country') || $page.url.startsWith('/measurement') || $page.url.startsWith('/material-category') || $page.url.startsWith('/vehicle-type') || $page.url.startsWith('/vendors') || route().current() == 'dashboard' || $page.url.startsWith('/unit-conversion') || $page.url.startsWith('/tax') || $page.url.startsWith('/users') || $page.url.startsWith('/grn') }"
+                                class=" list-unstyled" id="vehicleMenu">
                                 <li class="nav-item">
-                                    <!-- <Link :class="{ 'active': $page.url.startsWith('/materials') }"
-                                        class="nav-link active-preloader" :href="route('material.index')">
+                                    <Link :class="{ 'active': $page.url.startsWith('/vehicles') }"
+                                        class="nav-link active-preloader" :href="route('vehicle.index')">
                                     <font-awesome-icon icon="fa-solid fa-folder " class="ml-4" />
                                     <span class="ml-2 hide-menu">All</span>
-                                    </Link> -->
+                                    </Link>
                                 </li>
                                 <li v-for="vehicleType in vehicleTypes" :key="vehicleType.id" class="nav-item">
-                                    <!-- <Link :class="{ 'active': $page.url.startsWith('/materials') }"
+                                    <Link :class="{ 'active': $page.url.startsWith('/vehicles') }"
                                         class="nav-link active-preloader"
-                                        :href="route('material.slug.index', vehicleType.slug)">
-                                    <font-awesome-icon icon="fa-solid fa-folder " class="ml-4" />
-                                    <span class="ml-2 hide-menu">{{ vehicleType.name }}</span>
-                                    </Link> -->
-                                </li>
-                                <!-- <li v-for="vehicleType in vehicleTypes" :key="vehicleType.id" class="nav-item">
-                                    <Link :class="{ 'active': $page.url.startsWith('/materials') }"
-                                        class="nav-link active-preloader"
-                                        :href="route('material.slug.index', vehicleType.slug)">
+                                        :href="route('vehicle.slug.index', vehicleType.slug)">
                                     <font-awesome-icon icon="fa-solid fa-folder " class="ml-4" />
                                     <span class="ml-2 hide-menu">{{ vehicleType.name }}</span>
                                     </Link>
-                                </li> -->
+                                </li>
+                                <li v-for="vehicleType in vehicleTypes" :key="vehicleType.id" class="nav-item">
+                                    <Link :class="{ 'active': $page.url.startsWith('/vehicles') }"
+                                        class="nav-link active-preloader"
+                                        :href="route('vehicle.slug.index', vehicleType.slug)">
+                                    <font-awesome-icon icon="fa-solid fa-folder " class="ml-4" />
+                                    <span class="ml-2 hide-menu">{{ vehicleType.name }}</span>
+                                    </Link>
+                                </li>
                             </ul>
                         </li>
                         <!-- <li class="nav-item" v-if="can('read_vendor')"> -->
